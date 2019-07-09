@@ -1,0 +1,347 @@
+body.checkout {
+  padding: 30px 0 0 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #1f2d3d;
+  box-sizing: border-box;
+  background: #fefefe;
+  /* Multifile List - collapsed view */
+  /* Pricing Table */ }
+  body.checkout *,
+  body.checkout *:before,
+  body.checkout *:after {
+    box-sizing: inherit; }
+  body.checkout .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    grid-gap: 30px 3vw;
+    padding: 3vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Submit button */ }
+    body.checkout .main-container .section {
+      width: 100%; }
+    body.checkout .main-container button[type="submit"] {
+      grid-column: 1;
+      padding: 20px;
+      background: #00a6c0;
+      color: white;
+      text-transform: uppercase;
+      width: 60%;
+      border-radius: 18px;
+      box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1);
+      outline: none;
+      border: none;
+      cursor: pointer;
+      -webkit-transition: all 90ms ease-out;
+      transition: all 90ms ease-out; }
+      body.checkout .main-container button[type="submit"]:hover {
+        -webkit-transform: scale(1.04);
+                transform: scale(1.04);
+        box-shadow: 0px 20px 20px -13px rgba(0, 0, 0, 0.1); }
+      body.checkout .main-container button[type="submit"]:active {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        box-shadow: inset 10px 10px 10px 0 rgba(0, 0, 0, 0.1); }
+    @media (min-width: 761px) {
+      body.checkout .main-container {
+        grid-template-columns: 1fr 1fr; } }
+  body.checkout .section {
+    border: 1px solid #dfdfe0;
+    border-radius: 8px;
+    padding: 60px 40px 40px 40px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe;
+    /* Radio Buttons */
+    /* Incrementer numbers */
+    /* Select dropdown */
+    /* Toggles */ }
+    body.checkout .section .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #e6e5e5;
+      padding: 1.5ch 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 2px 2px 0 0; }
+    body.checkout .section fieldset {
+      border: none;
+      margin: 5px 0;
+      line-height: 30px; }
+      body.checkout .section fieldset legend {
+        font-weight: bolder; }
+    body.checkout .section input[type="radio"] {
+      visibility: hidden;
+      width: 0px;
+      height: 0px; }
+      body.checkout .section input[type="radio"] + label {
+        vertical-align: baseline;
+        cursor: pointer; }
+        body.checkout .section input[type="radio"] + label:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          border: 1px solid #ababae;
+          margin-right: 20px;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+                  justify-content: center;
+          font-size: 20pt;
+          color: #ffffff;
+          padding: 0;
+          line-height: 0;
+          -webkit-transition: all 340ms ease;
+          transition: all 340ms ease; }
+      body.checkout .section input[type="radio"]:checked + label:before {
+        border: 1px solid #00a6c0;
+        background: #00a6c0;
+        content: "\2022"; }
+    body.checkout .section .incrementer input[type="number"] {
+      -webkit-appearance: textfield;
+         -moz-appearance: textfield;
+              appearance: textfield;
+      border: 1px solid #ababae;
+      font-size: 1.5em;
+      padding: 0.5ch 1ch;
+      border-radius: 4px 0 0 4px;
+      height: 38px;
+      width: 110px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: inline-flex;
+      vertical-align: middle; }
+      body.checkout .section .incrementer input[type="number"] ~ button {
+        border: 1px solid #ababae;
+        height: 38px;
+        width: 38px;
+        vertical-align: bottom;
+        margin: 0;
+        font-size: 18pt;
+        color: #00a6c0;
+        line-height: 0;
+        margin-left: -4px;
+        font-weight: 300;
+        outline: none;
+        -webkit-transition: all 90ms ease;
+        transition: all 90ms ease;
+        cursor: pointer; }
+        body.checkout .section .incrementer input[type="number"] ~ button:active {
+          box-shadow: inset 0 0 4px gray;
+          font-size: 25pt; }
+        body.checkout .section .incrementer input[type="number"] ~ button.minus {
+          border-left: none;
+          border-right: none;
+          line-height: 10px; }
+        body.checkout .section .incrementer input[type="number"] ~ button.plus {
+          border-radius: 0px 4px 4px 0; }
+    body.checkout .section input[type="number"]::-webkit-inner-spin-button,
+    body.checkout .section input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    body.checkout .section select {
+      width: 186px;
+      border: 1px solid #ababae;
+      background-color: #ffffff;
+      height: 38px;
+      font-size: 14pt;
+      padding: 0.5ch 1ch;
+      position: relative;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background-image: -webkit-linear-gradient(45deg, transparent 50%, #00a6c0 50%), -webkit-linear-gradient(315deg, #00a6c0 50%, transparent 50%);
+      background-image: linear-gradient(45deg, transparent 50%, #00a6c0 50%), linear-gradient(135deg, #00a6c0 50%, transparent 50%);
+      background-position: calc(100% - 20px) center, calc(100% - 12px) center;
+      background-size: 8px 8px;
+      background-repeat: no-repeat; }
+      body.checkout .section select.small {
+        width: 89px; }
+    body.checkout .section input[type="checkbox"] {
+      visibility: hidden;
+      position: absolute;
+      /* Sliding toggle and background  */
+      /* Text label for toggle */ }
+      body.checkout .section input[type="checkbox"] + label {
+        position: relative;
+        width: 65px;
+        height: 30px;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+      body.checkout .section input[type="checkbox"] + label:before {
+        display: block;
+        content: "\2022";
+        color: #ffffff;
+        background: #00a6c0;
+        width: 65px;
+        height: 30px;
+        font-size: 58px;
+        line-height: 30px;
+        text-align: left;
+        border-radius: 40px;
+        position: absolute;
+        -webkit-transition: all 340ms ease;
+        transition: all 340ms ease; }
+      body.checkout .section input[type="checkbox"]:checked + label:before {
+        padding-left: 40px; }
+      body.checkout .section input[type="checkbox"] + label:after {
+        content: attr(data-label-off);
+        position: absolute;
+        display: block;
+        width: 65px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: right;
+        padding: 0 1.5ch; }
+      body.checkout .section input[type="checkbox"]:checked + label:after {
+        content: attr(data-label-on);
+        text-align: left; }
+    body.checkout .section fieldset.label {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+              flex: 1; }
+      body.checkout .section fieldset.label input[type="text"] {
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        box-shadow: none;
+        border: 1px solid #a0a0a0;
+        padding-left: 2ch;
+        font-size: 15px; }
+      body.checkout .section fieldset.label label {
+        font-weight: bold;
+        display: block; }
+    body.checkout .section .coupon-form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+              align-items: flex-end;
+      width: 70%;
+      margin-top: 40px; }
+      body.checkout .section .coupon-form input[type="button"] {
+        width: 80px;
+        height: 40px;
+        background: #00a6c0;
+        color: white;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+        font-size: 0.8em;
+        margin-left: 10px; }
+  body.checkout .multifile {
+    padding: 0; }
+  body.checkout .multifile-item {
+    list-style: none;
+    counter-increment: prints; }
+    body.checkout .multifile-item:before {
+      content: counter(prints);
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border: 2px solid #00a6c0;
+      background-color: #f0f0f0;
+      font-size: 13px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 50%;
+      font-weight: bold;
+      color: #002227;
+      line-height: 20px; }
+    body.checkout .multifile-item .file-name {
+      display: inline-block;
+      font-weight: bold; }
+    body.checkout .multifile-item .multifile-summary {
+      display: none;
+      font-size: 0.7rem;
+      font-style: italic;
+      cursor: pointer; }
+      body.checkout .multifile-item .multifile-summary:hover {
+        text-decoration: underline; }
+      body.checkout .multifile-item .multifile-summary:after {
+        content: " [Edit]"; }
+    body.checkout .multifile-item .multifile-settings {
+      background-color: #fafcff;
+      padding: 1ch 1ch 2ch;
+      box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 9px;
+      position: relative; }
+      body.checkout .multifile-item .multifile-settings:before {
+        content: "Adjust print settings for this document";
+        font-size: 9pt;
+        position: relative;
+        font-weight: bold;
+        left: 10px; }
+    body.checkout .multifile-item .multifile-save {
+      background: #707070;
+      color: #f0f0f0;
+      border-radius: 10px;
+      padding: 0.5em 1em;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 2em;
+      -webkit-transition: -webkit-transform 200ms ease;
+      transition: -webkit-transform 200ms ease;
+      transition: transform 200ms ease;
+      transition: transform 200ms ease, -webkit-transform 200ms ease;
+      text-transform: uppercase; }
+      body.checkout .multifile-item .multifile-save:hover {
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03); }
+    body.checkout .multifile-item.collapse .multifile-summary {
+      display: inline-block; }
+    body.checkout .multifile-item.collapse .multifile-settings {
+      display: none; }
+    body.checkout .multifile-item.collapse .file-name {
+      font-weight: normal; }
+  body.checkout .section .section-content {
+    padding-top: 30px; }
+  body.checkout .pricing {
+    width: 100%; }
+    body.checkout .pricing fieldset {
+      padding: 0; }
+    body.checkout .pricing tr {
+      text-align: left; }
+    body.checkout .pricing tbody tr td {
+      padding-top: 1ch; }
+    body.checkout .pricing tbody tr td:last-child {
+      text-align: right; }
+    body.checkout .pricing tbody .bold td {
+      font-weight: bold; }
+    body.checkout .pricing tbody .topline td {
+      padding-top: 20px;
+      border-top: 1px solid #dfdfe0; }
+    body.checkout .pricing tbody .space-bottom td {
+      padding-bottom: 20px; }
+    body.checkout .pricing tbody .large td {
+      font-size: 1.2em; }
+/*# sourceMappingURL=checkout.css.map */

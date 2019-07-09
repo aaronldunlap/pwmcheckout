@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css"/>
+  </head>
+  <body class="checkout">
+    <form class="main-container">
+      <div class="section">
+        <h2 class="title">My Print Queue</h2>
+        <ol class="multifile">
+          <!-- First Print Document -->
+          <li class="multifile-item collapse">
+            <p class="file-name">My Cool Document.pdf</p>
+            <!-- Summary -->
+            <div class="multifile-summary">1 Copy B &W</div>
+            <!-- Settings-->
+            <div class="multifile-settings">
+              <fieldset class="incrementer">
+                <legend>Copies</legend>
+                <input type="number" pattern="[0-9]+" min="0" value="1" class="num-copies" name="doc1-copies"/>
+                <button class="minus">-</button>
+                <button class="plus">+</button>
+              </fieldset>
+              <fieldset>
+                <legend>Color</legend>
+                <input type="radio" class="radio-color" name="doc1-color" value="bw" id="radio1" checked/>
+                <label for="radio1" class="color">Black and white ($.39 per page)</label>
+                <br/>
+                <input type="radio" name="doc1-color" value="color" id="radio2" class="radio-color"/>
+                <label for="radio2">Color ($.29 per page)</label>
+              </fieldset>
+              <fieldset>
+                <legend>Sides</legend>
+                <input type="radio" class="radio-sides" name="doc1-sides" value="1" id="radio1-1" checked/>
+                <label for="radio1-1" class="sides">1-Sided</label>
+                <br/>
+                <input type="radio" name="doc1-sides" value="2" id="radio1-2" class="radio-sides"/>
+                <label for="radio1-2">Double-sided</label>
+              </fieldset>
+              <fieldset>
+                <legend>Orientation</legend>
+                <select name="doc1-orientation" class="orientation">
+                  <option value="0">Auto</option>
+                  <option value="1">Portrait</option>
+                  <option value="2">Landscape</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Collate</legend>
+                <input type="checkbox" value="collate" id="doc1-collate" name="doc1-collate" class="toggle-collate"/>
+                <label for="doc1-collate" data-label-on="Yes" data-label-off="No"></label>
+              </fieldset>
+              <button class="multifile-save">Update</button>
+            </div>
+          </li>
+          <!-- Second file -->
+          <li class="multifile-item collapse">
+            <p class="file-name">Final Project.doc</p>
+            <!-- Summary -->
+            <div class="multifile-summary">1 Copy B &W</div>
+            <!-- Settings-->
+            <div class="multifile-settings">
+              <fieldset class="incrementer">
+                <legend>Copies</legend>
+                <input type="number" pattern="[0-9]+" min="0" value="1" name="copies" class="num-copies"/>
+                <button class="minus">-</button>
+                <button class="plus">+</button>
+              </fieldset>
+              <fieldset>
+                <legend>Color</legend>
+                <input type="radio" class="radio-color" name="doc2-color" value="bw" id="radio3" checked/>
+                <label for="radio3" class="color">Black and white ($.39 per page)</label>
+                <br/>
+                <input type="radio" name="doc2-color" value="color" id="radio4" class="radio-color"/>
+                <label for="radio4">Color ($.29 per page)</label>
+              </fieldset>
+              <fieldset>
+                <legend>Orientation</legend>
+                <select name="doc1-orientation" class="orientation">
+                  <option value="0">Auto</option>
+                  <option value="1">Portrait</option>
+                  <option value="2">Landscape</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Collate</legend>
+                <input type="checkbox" value="collate" id="doc1-collate" name="doc1-collate" class="toggle-collate"/>
+                <label for="doc1-collate" data-label-on="Yes" data-label-off="No"></label>
+              </fieldset>
+              <button class="multifile-save">Update</button>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="section">
+        <h2 class="title">Printing Cost</h2>
+        <div class="section-content">
+          <table class="pricing">
+            <thead>
+              <th colspan="2">MyDocumentName.pdf</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Black and white (1 page)</td>
+                <td>$0.39</td>
+              </tr>
+              <tr>
+                <td>Processing Fee (waived with purchase of credits)</td>
+                <td>$0.00</td>
+              </tr>
+              <tr class="space-bottom">
+                <td>Tax</td>
+                <td>$0.45</td>
+              </tr>
+              <tr class="topline bold">
+                <td>Sub-Total</td>
+                <td>$0.84</td>
+              </tr>
+              <tr class="space-bottom">
+                <td>Credits to be purchased</td>
+                <td>
+                  <fieldset>
+                    <select class="small">
+                      <option>$0</option>
+                      <option selected>$5</option>
+                      <option>$10</option>
+                      <option>$15</option>
+                    </select>
+                  </fieldset>
+                </td>
+              </tr>
+              <tr class="bold">
+                <td>New Total</td>
+                <td>$5.84</td>
+              </tr>
+              <tr class="space-bottom">
+                <td>Credits applied</td>
+                <td>$0.84</td>
+              </tr>
+              <tr class="topline bold large">
+                <td>Ammount Due</td>
+                <td>$5.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="coupon-form">
+            <fieldset class="label">
+              <label for="coupon-code-field">Discount Code</label>
+              <input type="text" id="coupon-code-field" name="coupon">
+            </fieldset>
+            <input type="button" value="Apply">
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="title">This is the title of the section</h2>
+        <p>Hello there</p>
+      </div>
+      <div class="section">
+        <h2 class="title">This is the title of the section</h2>
+        <p>Hello there</p>
+      </div>
+      <button type="submit">Complete Order &amp;Print Now
+      </button>
+    </form>
+    <script src="checkout.min.js"></script>
+  </body>
+</html>
