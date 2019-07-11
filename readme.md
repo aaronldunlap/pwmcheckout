@@ -1,4 +1,4 @@
-#PWM Checkout UI
+# PWM Checkout UI
 
 HTML is in `checkout.html`, styles are in `checkout.scss`, JS is in `checkout.js`.
 
