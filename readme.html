@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<p>#PWM Checkout UI</p>
+
+<p>HTML is in <code>checkout.html</code>, styles are in <code>checkout.scss</code>, JS is in <code>checkout.js</code>.</p>
+
+<p>No other styles or JS libraries are included so it would be easier to integrate. All JS is vanilla JS written in ES6 style. Babel is used to transpile it into ES5 code and minimize it into <code>checkout.min.js</code>.</p>
+
+<p>Styles are all scope to <code>body.checkout</code> so it wouldn&#8217;t interfere with other code. Make sure the <body> tag in the HTML has class &#8220;checkout&#8221; applied or nothing will show up.</p>
+
+<p>The HTML for multifile print is built out so you could include as many files as you want. Just loop out each item into a <code>&lt;li class=&quot;multifile-item&quot;&gt;</code> and output the appropriate values in the form fields.</p>
+
+<p>Most of the heavy lifting in the JS file is in the function &#8220;summarizeSettings()&#8221;, it takes all of the selected print configurations and reduces them into a single string (like &#8220;1 copy B&amp;W&#8221;)</p>
+
+</body>
+</html>
+
